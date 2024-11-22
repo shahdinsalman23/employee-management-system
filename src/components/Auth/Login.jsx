@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import loginFormImage from '../../../public/employee.png'
 
 const Login = ({handleLogin}) => {
     const [email, setEmail] = useState('')
@@ -14,6 +15,7 @@ const Login = ({handleLogin}) => {
   return (
     <div className="flex h-screen w-screen items-center justify-center">
         <div className="border-2 px-16 py-16 rounded-md  border-emerald-600">
+          <img src={loginFormImage} className='invert pb-8 w-28 m-auto' alt="" />
             <form onSubmit={(e)=>{
                 submitHandler(e);
             }} className='flex flex-col items-center justify-center'>
